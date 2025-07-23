@@ -2,15 +2,43 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>من أنا</title>
-  <link rel="stylesheet" href="style.css">
+  <title>موقعي الشخصي</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      direction: rtl;
+      background: linear-gradient(to right, #dfe9f3, #ffffff);
+      color: #333;
+      padding: 20px;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      color: #0077cc;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0077cc;
+      margin: 0 10px;
+    }
+  </style>
 </head>
 <body>
-  <h1>من أنا</h1>
-  <p>اسمي لايغ كينغ، أتعلم بايثون وأطور مهاراتي في الأمن السيبراني.</p>
+  <h1>مرحباً بك في موقعي</h1>
+  <p>أنا مطور مهتم بالبرمجة والأمن السيبراني.</p>
   <nav>
-    <a href="index.html">الرئيسية</a> |
-    <a href="about.html">من أنا</a>
+    <a href="#home">الرئيسية</a> |
+    <a href="#about">من أنا</a>
   </nav>
+
+  <hr>
+
+  <!-- قسم "من أنا" -->
+  <section id="about">
+    <h1>من أنا</h1>
+    <p>اسمي لايغ كينغ، أتعلم بايثون وأطور مهاراتي في الأمن السيبراني.</p>
+  </section>
 </body>
 </html>
