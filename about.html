@@ -4,41 +4,50 @@
   <meta charset="UTF-8">
   <title>موقعي الشخصي</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      direction: rtl;
-      background: linear-gradient(to right, #dfe9f3, #ffffff);
-      color: #333;
-      padding: 20px;
-      min-height: 100vh;
-      margin: 0;
+    body { margin:0; font-family: Arial, sans-serif; direction: rtl; }
+    header {
+      background: #0077cc; padding: 20px;
+      display: flex; justify-content: space-between; align-items: center;
+      color: #fff;
     }
-
-    h1 {
-      color: #0077cc;
+    header nav a { color: #fff; text-decoration: none; margin: 0 10px; }
+    .banner {
+      background: linear-gradient(135deg, #00aaff, #ffffff);
+      color: #fff; padding: 100px 20px; text-align: center;
     }
-
-    nav a {
-      text-decoration: none;
-      color: #0077cc;
-      margin: 0 10px;
+    .banner h1 { font-size: 2.5em; margin: 0; }
+    .banner p { font-size: 1.2em; }
+    .about { padding: 60px 20px; text-align: center; }
+    .about h2 { color: #0077cc; }
+    footer {
+      background: #f4f4f4; text-align: center; padding: 20px;
+      font-size: 0.9em; color: #555;
     }
   </style>
 </head>
 <body>
-  <h1>مرحباً بك في موقعي</h1>
-  <p>أنا مطور مهتم بالبرمجة والأمن السيبراني.</p>
+
+<header>
+  <div class="logo">موقعي الشخصي</div>
   <nav>
-    <a href="#home">الرئيسية</a> |
+    <a href="#home">الرئيسية</a>
     <a href="#about">من أنا</a>
   </nav>
+</header>
 
-  <hr>
+<section class="banner" id="home">
+  <h1>مرحباً بك في موقعي</h1>
+  <p>أنا مطور مهتم بالبرمجة والأمن السيبراني.</p>
+</section>
 
-  <!-- قسم "من أنا" -->
-  <section id="about">
-    <h1>من أنا</h1>
-    <p>اسمي لايغ كينغ، أتعلم بايثون وأطور مهاراتي في الأمن السيبراني.</p>
-  </section>
+<section class="about" id="about">
+  <h2>من أنا</h2>
+  <p>اسمي لايغ كينغ، أتعلم بايثون وأطور مهاراتي في الأمن السيبراني.</p>
+</section>
+
+<footer>
+  © 2025 لايغ كينغ • جميع الحقوق محفوظة
+</footer>
+
 </body>
 </html>
